@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Julie Curry online portfolio">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+	function SubForm() {
+		$.ajax({
+			url: 'https://api.apispreadsheets.com/data/1oOIbO9FihMDmLBA/',
+			type: 'post',
+			data: $("#myForm").serializeArray(),
+			success: function () {
+				alert("Contact Info Submitted!")
+			},
+			error: function () {
+				alert("There was an error!")
+			}
+		});
+	}
+</script>
+</head>
+<body>
+
+	<!-- SECTION: Splashscreen -->
+	<div class="splashscreen">
+		<div class="preloader">
+			<span class="preloader__text">Loading</span>
+		</div>
+	</div>
+	<!-- END SECTION: Splashscreen -->
+	<!-- SECTION: Navigation -->
+	<div id="top" class="navigation">
+		<div class="navigation__wrapper wrapper--large">
+			<a class="navigation__logo logo" href="#0">JC</a>
+			<nav class="navigation__container">
+				<ul class="navigation__list">
+					<li><a href="#0">Home</a></li>
+					<li><a href="#work">Portfolio</a></li>
+					<!-- <li><a href="#skills">Skills</a></li> -->
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- END SECTION: Navigation -->
+	<!-- SECTION: Intro -->
+	<header class="header">
+		<div class="introduction">
+			<h1 class="introduction__content">
+				<span class="introduction__content-el introduction__content-el--name">Web Design</span>
+				<span class="introduction__content-el introduction__content-el--description">Julie Curry</span>
+				<span class="introduction__content-el introduction__content-el--job">Software Development</span>
+			</h1>
+			<svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z"/></g></svg>
+		</div>
+	</header>
+	<!-- END SECTION: Intro -->
+	<main role="main">
+		<!-- SECTION: About -->
+		<section class="about">
+			<div class="about__wrapper wrapper--small">
+				<div class="about__content">
+					<div class="about__content-blurb blurb blurb--framed">
+						<h2 class="blurb__heading">Eclectic</h2>
+						<h3>deriving ideas, style, or taste from a broad and diverse range of sources.</h3>
+					</div>
+					<div class="about__content-blurb blurb blurb--framed">
+						<h2 class="blurb__heading">
+							About Me
+						</h2>
+						<h3>I have years of experience working in education, technology, and customer service. Some of my skills include JavaScript, CSS, HTML, React, and jQuery! There is much to learn in my career path and I plan to make an impact in my work environment and other aspects of my life.
+						</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END SECTION: About -->
+		<!-- SECTION: App Design -->
+		<section class="app-design">
+			<div class="app-design__wrapper wrapper--large">
+				<div class="app-design__content blurb">
+					<h2 class="blurb__heading"> General Assembly <br>Software Engineering</h2>
+					<p class="blurb__copy blurb__copy--tight">Completed Software Engineering Remote Immersive program in 2021.</p>
+					<p class="blurb__copy blurb__copy--tight">Learned and practiced the basics of Full-Stack Software Development.
+					</p>
+				</div>
+			</div>
+			<figure class="app-design__visual"></figure>
+			</section>
+			<!-- END SECTION: App Design -->
+			<!-- SECTION: Web Design -->
+			<!-- <section class="web-design">
+				<div class="web-design__wrapper wrapper--small">
+					<div class="web-design__content blurb">
+						<h2 class="blurb__heading"> <br> </h2>
+						<p class="blurb__copy blurb__copy--tight"> </p>
+						<a class="transform-link" href="#0">Check it out</a>
+					</div>
+				</div>
+			<figure class="web-design__visual"></figure>
+		</section> -->
+		<!-- END SECTION: Web Design -->
+		<!-- SECTION: Work -->
+		<section id="work" class="work">
+			<h2 class="work__heading title">Latest Projects</h2>
+			<div class="work__wrapper wrapper--large">
+				<ul class="work__list">
+					<li class="work__list-el work__list-el--is-active">
+						<div class="work__content">
+							<div class="work__content-blurb blurb blurb--framed">
+								<h3 class="blurb__heading">Budget Book<br>React Application and Database</h3>
+								<p class="blurb__copy">Working with a team of four developers allowed for my team to accomplish an impressive beginner database.</p>
+							</div>
+							<a class="transform-link" href="https://team-formerly-known-as.github.io/budget-book-frontend/">See full project</a>
+						</div>
+						<div class="work__visual">
+							<img src="assets/img/budget-book.png" alt="Budget Book">
+						</div>
+					</li>
+					<li class="work__list-el">
+						<div class="work__content">
+							<div class="work__content-blurb blurb blurb--framed">
+								<h3 class="blurb__heading">Kronos Weather<br>Web Design</h3>
+								<p class="blurb__copy">Concept for a weather application that also utilizes a quote API for user friendliness.</p>
+							</div>
+							<a class="transform-link" href="https://jccloud01.github.io/Kronos-Weather/#/">See full project</a>
+						</div>
+						<div class="work__visual">
+							<img src="assets/img/kronos-weather-app.png" alt="Kronos Weather">
+						</div>
+					</li>
+					<li class="work__list-el">
+						<div class="work__content">
+							<div class="work__content-blurb blurb blurb--framed">
+								<h3 class="blurb__heading">Coming Soon<br></h3>
+								<p class="blurb__copy">Make sure to check for future projects...</p>
+							</div>
+							<!-- <a class="transform-link" href="#0">See full project</a> -->
+						</div>
+						<div class="work__visual">
+							<img src="comingsoon" alt="Coming Soon">
+						</div>
+					</li>
+				</ul>
+				<ul class="work__navigation">
+					<li class="work__navigation-el work__navigation-el--is-active"></li>
+					<li class="work__navigation-el"></li>
+					<li class="work__navigation-el"></li>
+				</ul>
+			</div>
+		</section>
+		<!-- END SECTION: Work -->
+		<!-- SECTION: skills -->
+		<!-- <section id="skill" class="skill">
+			<h2 class="skill__heading title">Skills</h2>
+			<div class="skill__wrapper wrapper--large">
+				<ul class='icons-one'>
+					<li class='skill-image' id='skill1'><img src='assets/img/adobe-photoshop--v1.png' id='icons1' alt='photoshop'></li>
+					<li class='skill-image' id='skill2'><img src='assets/img/codepen.png' id='icons1' alt='codepen'></li>
+					<li class='skill-image' id='skill3'><img src='assets/img/css3.png' id='icons1' alt='css3'></li>
+					<li class='skill-image' id='skill4'><img src='assets/img/github--v1.png' id='icons1' alt='github'></li>
+					<li class='skill-image' id='skill5'><img src='assets/img/html-5--v2.png' id='icons1' alt='html5'></li>
+					<li class='skill-image' id='skill6'><img src='assets/img/javascript--v1.png' id='icons1' alt='javascript'></li>
+				</ul>
+			</div>
+		</section> -->
+		<!-- END SECTION: skills -->
+		<!-- SECTION: Contact -->
+		<section id="contact" class="contact">
+			<h2 class="contact__heading title">Contact Me</h2>
+			<div class="contact__wrapper wrapper--large">
+				<div class="contact__visual">
+					<img src="assets/img/julie-location.png" alt="Julie Curry's location">
+				</div>
+				<!-- Simple form setup: formspree.io -->
+				<form id="myForm" class="contact__form">
+					<input class="contact__form-el contact__form-el--name" name="name" type="text" placeholder="Your Name" spellcheck="false">
+					<input class="contact__form-el contact__form-el--email" name="email" type="email" placeholder="Your Email" spellcheck="false">
+					<textarea class="contact__form-el contact__form-el--message" name="message" placeholder="Your Message"></textarea>
+					<input onclick="SubForm()" class="contact__form-el contact__form-el--submit" type="submit" value="Send">
+				</form>
+			</div>
+		</section>
+		<!-- END SECTION: Contact -->
+	</main>
+	<!-- SECTION: Footer -->
+	<footer class="footer">
+		<div class="footer__wrapper wrapper--large">
+			<p class="footer__copyright no-margin">&copy; 2021 Julie Curry</p>
+			<a class="footer__logo logo" href="#0">JM</a>
+			<a class="footer__arrow" href="#top">
+				<svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M315.4 365c-336-305-345-315-290-351 18-12 32-14 45-8 10 5 145 123 300 262l281 253 196-178c108-98 237-215 287-260 50-46 98-83 107-83s27 9 40 19c20 16 22 23 14 46 -12 33-623 585-647 585C638.4 650 489.4 522 315.4 365z"/></g></svg>
+			</a>
+		</div>
+	</footer>
+	<!-- END SECTION: Footer -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- jQuery local fallback -->
+	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+	<script src="assets/js/functions-min.js"></script>
+</body>
+</html>
